@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shrinika's Elegance | Feel the beauty of fashion</title>
+
+  <!-- Google Fonts: Cinzel for regal headers, MonteCarlo / Dancing Script for luxury script accents, Inter for UI -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome 6 CDN for iconography -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            regal: ['"Cinzel"', 'serif'],
+            script: ['"Dancing Script"', 'cursive'],
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            shrinika: {
+              magenta: '#8B0B47',
+              darkmagenta: '#660533',
+              lightmagenta: '#A81358',
+              accentpink: '#C2185B',
+              softpink: '#FDF0F6',
+              gold: '#C59A44',
+              brightgold: '#D4AF37',
+              lightgold: '#EAD7A5',
+              darkgold: '#8A6822',
+              champagne: '#FAF7F2',
+              ivory: '#FFFDF9',
+              darkcharcoal: '#1A1416',
+              bordergold: '#E3CF9E'
+            }
+          },
+          boxShadow: {
+            'regal': '0 10px 25px -3px rgba(139, 11, 71, 0.12), 0 4px 6px -2px rgba(197, 154, 68, 0.15)',
+            'goldglow': '0 0 20px rgba(197, 154, 68, 0.35)',
+            'magentaglow': '0 0 22px rgba(139, 11, 71, 0.3)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --brand-magenta: #8B0B47;
+      --brand-gold: #C59A44;
+      --brand-champagne: #FAF7F2;
+    }
+
+    body {
+      background-color: #FAF7F2;
+      color: #1A1416;
+      font-family: 'Inter', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      overflow-x: hidden;
+    }
+
+    /* Shrinika metallic gradient backgrounds & borders */
+    .bg-royal-gradient {
+      background: linear-gradient(135deg, #8B0B47 0%, #680534 60%, #4B0224 100%);
+    }
+
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #EAD7A5 0%, #C59A44 50%, #9A7727 100%);
+    }
+
+    .border-gold-gradient {
+      border-image: linear-gradient(to right, #C59A44, #F0E1B9, #C59A44) 1;
+    }
+
+    .gold-text-gradient {
+      background: linear-gradient(135deg, #9A7727 0%, #C59A44 45%, #EAD7A5 70%, #9A7727 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .magenta-text-gradient {
+      background: linear-gradient(135deg, #8B0B47 0%, #C2185B 60%, #680534 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Smooth page view animation */
+    .fade-view-enter {
+      animation: smoothFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes smoothFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      background-color: rgba(26, 20, 22, 0.75);
+      backdrop-filter: blur(5px);
+    }
+
+    /* Subtle luxury scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4ECE1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C59A44;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #8B0B47;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col selection:bg-shrinika-magenta selection:text-white">
+
+  <!-- 1. SPLASH SCREEN (Fraction of second ~ 0.9s to 1.1s fade out) -->
+  <div id="splashScreen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-shrinika-ivory transition-opacity duration-500 ease-out">
+    <div class="relative flex flex-col items-center text-center px-4 animate-pulse">
+      
+      <!-- Glowing Gold Aura -->
+      <div class="absolute -inset-10 bg-amber-400/20 rounded-full blur-3xl"></div>
+      
+      <!-- Exact Logo Emblem Representation (SVG replica with golden crown, lady silhouette, royal magenta pleated saree, and gold leaf flourish) -->
+      <div class="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full border-4 border-shrinika-gold shadow-goldglow bg-white p-2.5 flex items-center justify-center transform scale-100 hover:scale-105 transition-transform duration-700">
+        <svg class="w-full h-full" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Circular borders -->
+          <circle cx="200" cy="200" r="190" stroke="#C59A44" stroke-width="3"/>
+          <circle cx="200" cy="200" r="182" stroke="#E5C368" stroke-width="1.2" stroke-dasharray="4 3"/>
+
+          <!-- Crown above the S -->
+          <path d="M182 66L191 80L200 62L209 80L218 66L214 88H186L182 66Z" fill="#C59A44"/>
+          <circle cx="182" cy="64" r="3.5" fill="#8B0B47"/>
+          <circle cx="200" cy="60" r="4" fill="#8B0B47"/>
+          <circle cx="218" cy="64" r="3.5" fill="#8B0B47"/>
+
+          <!-- Golden Elegant 'S' Monogram -->
+          <path d="M255 125C240 102 216 96 195 96C152 96 136 126 136 148C136 182 176 192 205 204C236 217 248 238 248 266C248 308 205 322 172 316C152 312 136 298 130 286C138 286 148 281 148 271C148 260 137 253 127 253C120 253 114 257 112 264C111 292 142 334 192 334C244 334 266 298 266 261C266 216 220 205 192 193C166 182 153 166 153 145C153 118 177 106 200 106C218 106 235 114 246 128C241 133 241 140 246 143C251 146 257 141 259 135C260 131 258 127 255 125Z" fill="#C59A44"/>
+
+          <!-- Elegant Lady Silhouette Head & Bun -->
+          <circle cx="188" cy="115" r="9" fill="#2E2420"/>
+          <path d="M192 110C188 106 178 108 177 116C176 123 183 129 189 129C192 129 193 125 195 122C192 121 190 117 192 110Z" fill="#2E2420"/>
+          <path d="M191 123C196 123 205 126 206 135L200 148L193 146" stroke="#2E2420" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="190" cy="126" r="1.5" fill="#C59A44"/>
+
+          <!-- Royal Magenta Pleated Saree & Pallu Drape -->
+          <path d="M193 146C197 155 208 166 210 185C213 210 182 248 164 268C154 279 146 295 158 308C172 322 208 308 222 278C236 248 238 214 228 178C222 156 208 147 193 146Z" fill="#8B0B47"/>
+          <!-- Pleat accents on drape in contrasting magenta/berry tints -->
+          <path d="M201 156C208 182 216 216 207 248C198 276 178 296 166 304" stroke="#C2185B" stroke-width="3" stroke-linecap="round"/>
+          <path d="M207 172C216 198 223 234 216 264C208 288 190 306 178 312" stroke="#E63980" stroke-width="2" stroke-linecap="round"/>
+          <path d="M196 147C191 166 182 188 170 206C163 218 155 233 151 247" stroke="#680534" stroke-width="2.5" stroke-linecap="round"/>
+
+          <!-- Floral & Leaf Garland Accents on the right in gold and magenta -->
+          <path d="M246 178C258 170 270 174 274 186C262 188 250 185 246 178Z" fill="#C59A44"/>
+          <path d="M249 164C262 154 274 158 278 170C266 173 253 170 249 164Z" fill="#8B0B47"/>
+          <path d="M244 194C254 189 266 195 268 206C257 206 247 201 244 194Z" fill="#C2185B"/>
+          <path d="M238 188C245 196 250 210 248 224C243 211 239 199 238 188Z" fill="#C59A44"/>
+        </svg>
+      </div>
+
+      <!-- Shrinika's Elegance Title -->
+      <h1 class="font-regal text-3xl sm:text-4xl font-bold tracking-[0.18em] uppercase text-shrinika-magenta mt-5">
+        Shrinika’s
+      </h1>
+      <span class="font-regal text-xs sm:text-sm tracking-[0.35em] text-shrinika-gold uppercase font-semibold -mt-1 block">
+        E L E G A N C E
+      </span>
+      <p class="font-script text-xl sm:text-2xl text-shrinika-darkcharcoal mt-1 font-semibold">
+        Feel the beauty of fashion
+      </p>
+
+      <!-- Loading Pip -->
+      <div class="mt-4 flex items-center gap-1.5">
+        <span class="w-2 h-2 rounded-full bg-shrinika-magenta animate-ping"></span>
+        <span class="text-[11px] text-shrinika-gold tracking-widest font-regal font-medium">OPENING CATALOGUE...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. FRONT PAGE TOP HEADER (Logo, Title, Live Search) -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-shrinika-bordergold shadow-sm transition-all">
+    <div class="max-w-5xl mx-auto px-4 py-2.5 sm:py-3.5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      
+      <!-- Brand Logo, Title & Tagline -->
+      <div class="w-full sm:w-auto flex items-center justify-between">
+        <div id="brandHeaderLogo" class="flex items-center gap-3 cursor-pointer select-none group">
+          <!-- Circular Logo matching uploaded image -->
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border-2 border-shrinika-gold shadow-sm bg-white p-1 flex items-center justify-center flex-shrink-0 group-hover:border-shrinika-magenta transition-colors">
+            <svg class="w-full h-full" viewBox="0 0 400 400" fill="none">
+              <circle cx="200" cy="200" r="188" stroke="#C59A44" stroke-width="4"/>
+              <path d="M182 66L191 80L200 62L209 80L218 66L214 88H186L182 66Z" fill="#C59A44"/>
+              <path d="M255 125C240 102 216 96 195 96C152 96 136 126 136 148C136 182 176 192 205 204C236 217 248 238 248 266C248 308 205 322 172 316C152 312 136 298 130 286C138 286 148 281 148 271C148 260 137 253 127 253C120 253 114 257 112 264C111 292 142 334 192 334C244 334 266 298 266 261C266 216 220 205 192 193C166 182 153 166 153 145C153 118 177 106 200 106C218 106 235 114 246 128Z" fill="#C59A44"/>
+              <circle cx="188" cy="115" r="9" fill="#2E2420"/>
+              <path d="M193 146C197 155 208 166 210 185C213 210 182 248 164 268C154 279 146 295 158 308C172 322 208 308 222 278C236 248 238 214 228 178C222 156 208 147 193 146Z" fill="#8B0B47"/>
+              <path d="M201 156C208 182 216 216 207 248C198 276 178 296 166 304" stroke="#C2185B" stroke-width="4"/>
+              <path d="M246 178C258 170 270 174 274 186C262 188 250 185 246 178Z" fill="#C59A44"/>
+              <path d="M249 164C262 154 274 158 278 170C266 173 253 170 249 164Z" fill="#8B0B47"/>
+            </svg>
+          </div>
+
+          <!-- Brand Title + Tagline in exact styling -->
+          <div>
+            <div class="flex items-baseline gap-1">
+              <span class="font-regal text-xl sm:text-2xl font-bold tracking-[0.14em] uppercase text-shrinika-magenta">
+                Shrinika’s
+              </span>
+              <span class="font-regal text-[10px] sm:text-xs tracking-[0.3em] font-semibold text-shrinika-gold uppercase">
+                ELEGANCE
+              </span>
+            </div>
+            <p class="font-script text-xs sm:text-sm text-stone-600 font-semibold -mt-1 tracking-wide">
+              Feel the beauty of fashion
+            </p>
+          </div>
+        </div>
+
+        <!-- Mobile Context Back Button (when browsing deep views) -->
+        <button id="mobileBackBtn" class="hidden sm:hidden items-center gap-1.5 text-xs text-white bg-shrinika-magenta px-3 py-1.5 rounded-full border border-shrinika-gold shadow-sm">
+          <i class="fa-solid fa-chevron-left text-[10px]"></i>
+          <span id="mobileBackText">Back</span>
+        </button>
+      </div>
+
+      <!-- Top Search Bar -->
+      <div class="w-full sm:w-72 relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-shrinika-gold text-xs"></i>
+        <input 
+          id="globalSearchInput"
+          type="text" 
+          placeholder="Search sweaters, coats, shrugs..."
+          class="w-full bg-shrinika-champagne text-shrinika-darkcharcoal placeholder-stone-400 text-xs sm:text-sm pl-9 pr-8 py-2 rounded-full border border-shrinika-bordergold focus:outline-none focus:border-shrinika-magenta focus:ring-1 focus:ring-shrinika-magenta transition-all"
+        />
+        <button id="clearSearchBtn" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-shrinika-magenta text-xs">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-5xl w-full mx-auto px-4 py-4 sm:py-6">
+
+    <!-- ========================================================= -->
+    <!-- VIEW 1: FRONT PAGE (SEASON + AUDIENCE + CATEGORY GRID)     -->
+    <!-- ========================================================= -->
+    <section id="viewHome" class="space-y-6 fade-view-enter">
+      
+      <!-- Brand Royal Banner -->
+      <div class="relative overflow-hidden rounded-2xl bg-royal-gradient text-white p-5 sm:p-7 shadow-regal border border-shrinika-gold/40">
+        <div class="relative z-10 max-w-lg space-y-2">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-white/10 text-shrinika-lightgold border border-shrinika-gold/50 backdrop-blur-sm">
+            <i class="fa-solid fa-crown text-[10px] text-shrinika-brightgold"></i> Special Festive Promotion • Flat ₹299/-
+          </span>
+          <h2 class="font-regal text-2xl sm:text-3xl font-semibold tracking-wide text-white">
+            Elegance in Every Thread
+          </h2>
+          <p class="font-sans text-xs sm:text-sm text-shrinika-lightgold/90 font-light leading-relaxed">
+            Premium stretchable knitwear designed to fit all bodies from <span class="font-semibold text-white">Free (S/36 to 3XL/46)</span>. Seamless ordering via WhatsApp.
+          </p>
+        </div>
+
+        <!-- Decorative Floral Watermark -->
+        <div class="absolute right-2 -bottom-6 opacity-15 pointer-events-none w-48 h-48">
+          <svg viewBox="0 0 200 200" fill="currentColor">
+            <path d="M100 15C100 65 145 100 185 100C145 100 100 145 100 185C100 145 55 100 15 100C55 100 100 65 100 15Z"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Filter Tabs Container -->
+      <div class="bg-white p-4 sm:p-5 rounded-2xl border border-shrinika-bordergold shadow-sm space-y-4">
+        
+        <!-- 1. Season selection: Winter (by default) | Summer -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pb-3 border-b border-stone-100">
+          <span class="text-xs font-regal font-bold text-shrinika-darkmagenta tracking-wider uppercase flex items-center gap-2">
+            <i class="fa-solid fa-snowflake text-shrinika-gold"></i> Season Choice:
+          </span>
+          <div class="inline-flex p-1 bg-shrinika-champagne rounded-xl border border-shrinika-bordergold" id="seasonFilterContainer">
+            <button data-season="Winter" class="season-btn px-5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-shrinika-magenta text-white shadow-sm transition-all">
+              Winter ❄️
+            </button>
+            <button data-season="Summer" class="season-btn px-5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-stone-600 hover:text-shrinika-magenta transition-all">
+              Summer ☀️
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Audience selection: Women (by default) | Men | Kids -->
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+          <span class="text-xs font-regal font-bold text-shrinika-darkmagenta tracking-wider uppercase flex items-center gap-2">
+            <i class="fa-solid fa-gem text-shrinika-gold"></i> Target Collection:
+          </span>
+          <div class="inline-flex p-1 bg-shrinika-champagne rounded-xl border border-shrinika-bordergold" id="audienceFilterContainer">
+            <button data-audience="Women" class="audience-btn px-4 sm:px-5 py-1.5 rounded-lg text-xs sm:text-sm font-semibold bg-shrinika-gold text-white shadow-sm transition-all">
+              Women
+            </button>
+            <button data-audience="Men" class="audience-btn px-4 sm:px-5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-stone-600 hover:text-shrinika-magenta transition-all">
+              Men
+            </button>
+            <button data-audience="Kids" class="audience-btn px-4 sm:px-5 py-1.5 rounded-lg text-xs sm:text-sm font-medium text-stone-600 hover:text-shrinika-magenta transition-all">
+              Kids
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Category Grid Section -->
+      <div>
+        <div class="flex items-center justify-between mb-3.5 px-1">
+          <div class="flex items-center gap-2">
+            <h3 class="font-regal text-xl font-bold text-shrinika-darkmagenta">Categories</h3>
+            <span id="activeContextBadge" class="text-[11px] font-sans font-semibold text-shrinika-magenta bg-shrinika-softpink border border-shrinika-magenta/20 px-3 py-0.5 rounded-full">
+              Winter • Women
+            </span>
+          </div>
+          <span class="text-xs text-shrinika-gold font-medium font-script text-base">Select to view styles</span>
+        </div>
+
+        <!-- Dynamic Category Cards Container -->
+        <div id="categoryGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Empty search results message -->
+        <div id="noCategoriesMessage" class="hidden bg-white rounded-2xl p-8 text-center border border-shrinika-bordergold shadow-sm">
+          <div class="w-12 h-12 rounded-full bg-shrinika-softpink text-shrinika-magenta mx-auto flex items-center justify-center mb-3">
+            <i class="fa-solid fa-magnifying-glass text-lg"></i>
+          </div>
+          <p class="text-stone-700 text-sm font-medium">No fashion categories found for your search.</p>
+          <button id="resetSearchBtn" class="mt-3 text-xs text-shrinika-magenta font-semibold underline hover:text-shrinika-gold">
+            Reset Filters & Search
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- VIEW 2: CATEGORY PAGE (2 PRODUCT PARALLELLY DISPLAYED)     -->
+    <!-- ========================================================= -->
+    <section id="viewCategory" class="hidden space-y-4 fade-view-enter">
+      
+      <!-- Top Navigation & Breadcrumb -->
+      <div class="flex items-center justify-between pb-2.5 border-b border-shrinika-bordergold">
+        <button id="backToHomeBtn" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-shrinika-magenta hover:text-shrinika-darkmagenta transition-colors bg-white px-3 py-1.5 rounded-full border border-shrinika-bordergold shadow-sm">
+          <i class="fa-solid fa-arrow-left text-shrinika-gold"></i>
+          <span>All Categories</span>
+        </button>
+
+        <div class="text-right">
+          <span id="categoryBreadcrumbTag" class="text-[10px] uppercase tracking-wider text-shrinika-gold font-semibold block">Winter • Women</span>
+          <h2 id="categoryPageTitle" class="font-regal text-xl sm:text-2xl font-bold text-shrinika-darkmagenta leading-tight">Sweater</h2>
+        </div>
+      </div>
+
+      <!-- Free Size Promotional Guarantee Banner -->
+      <div class="flex items-center justify-between bg-shrinika-softpink border border-shrinika-magenta/30 rounded-xl px-4 py-2.5 text-xs text-shrinika-magenta shadow-sm">
+        <span class="font-medium flex items-center gap-2">
+          <i class="fa-solid fa-crown text-shrinika-gold"></i>
+          <span><strong>Free Size Guarantee:</strong> Stretchable fit for Chest S/36 to 3XL/46</span>
+        </span>
+        <span class="font-bold text-white bg-shrinika-magenta px-2.5 py-0.5 rounded-lg shadow-sm">
+          Price: 299/-
+        </span>
+      </div>
+
+      <!-- MANDATORY REQUIREMENT: Small photo (2 product parallely display) -->
+      <!-- grid grid-cols-2 strict structure -->
+      <div id="productsGrid" class="grid grid-cols-2 gap-3 sm:gap-4 md:gap-5">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Empty Category State -->
+      <div id="noProductsMessage" class="hidden py-12 text-center bg-white rounded-xl border border-shrinika-bordergold">
+        <i class="fa-solid fa-box-open text-3xl text-shrinika-gold mb-2"></i>
+        <p class="text-stone-600 text-sm">Fresh arrivals being curated for this category.</p>
+        <button id="backToCategoriesBtnAlt" class="mt-3 text-xs text-shrinika-magenta underline font-semibold">
+          Explore Other Styles
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- VIEW 3: PRODUCT DETAIL (3-4 IMAGES, 1 VIDEO, WHATSAPP)    -->
+    <!-- ========================================================= -->
+    <section id="viewProduct" class="hidden space-y-5 fade-view-enter">
+      
+      <!-- Back Navigation & Asset Identity Header -->
+      <div class="flex items-center justify-between">
+        <button id="backToCategoryBtn" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-shrinika-magenta hover:text-shrinika-darkmagenta bg-white px-3.5 py-1.5 rounded-full border border-shrinika-bordergold shadow-sm">
+          <i class="fa-solid fa-arrow-left text-shrinika-gold"></i>
+          <span id="backToCategoryLabel">Back to Category</span>
+        </button>
+        
+        <span id="detailAssetTagTop" class="text-xs font-mono font-semibold text-shrinika-darkmagenta bg-shrinika-softpink border border-shrinika-magenta/20 px-3 py-1 rounded-full">
+          Asset no:- 10001
+        </span>
+      </div>
+
+      <!-- Detail Card Layout -->
+      <div class="bg-white rounded-2xl border border-shrinika-bordergold shadow-regal overflow-hidden grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-6">
+        
+        <!-- Media Gallery Showcase: 3-4 High-Res Images & 1 Dedicated Video (Cols 1-7) -->
+        <div class="md:col-span-7 p-4 sm:p-6 bg-shrinika-champagne/40 flex flex-col gap-3.5 border-b md:border-b-0 md:border-r border-shrinika-bordergold">
+          
+          <!-- High-Resolution Showcase Stage -->
+          <div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-stone-900 border border-shrinika-bordergold shadow-inner flex items-center justify-center group">
+            
+            <!-- High-Res Image Display -->
+            <img 
+              id="mainDisplayImage" 
+              src="" 
+              alt="Shrinika's Elegance Knitwear High Resolution"
+              class="w-full h-full object-cover object-top transition-all duration-300"
+            />
+
+            <!-- Dedicated 1 Video Showcase Player (Shown when video thumbnail is active) -->
+            <div id="mainVideoPlayerContainer" class="hidden w-full h-full bg-stone-950 flex flex-col items-center justify-center p-4">
+              <video 
+                id="mainDisplayVideo" 
+                controls 
+                loop 
+                playsinline
+                class="w-full h-full object-cover rounded-lg"
+                src=""
+              >
+              </video>
+              
+              <!-- Video Fallback Reel Representation -->
+              <div id="videoFallbackMessage" class="hidden flex-col items-center justify-center text-center text-white px-4">
+                <div class="w-16 h-16 rounded-full bg-shrinika-magenta border-2 border-shrinika-gold flex items-center justify-center text-shrinika-gold mb-3 shadow-goldglow animate-bounce">
+                  <i class="fa-solid fa-play text-xl pl-1"></i>
+                </div>
+                <h4 class="font-regal text-lg text-white font-semibold">360° Elasticity & Fit Video</h4>
+                <p class="text-xs text-shrinika-lightgold mt-1 max-w-xs font-sans">
+                  Live demonstration of elastic recovery fitting comfortably across standard bust measurements 36" to 46".
+                </p>
+              </div>
+            </div>
+
+            <!-- Quality & Stretch Badges on Top of Photo -->
+            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur text-shrinika-darkmagenta text-[11px] font-semibold px-2.5 py-0.5 rounded-full border border-shrinika-gold shadow-sm flex items-center gap-1">
+              <i class="fa-solid fa-camera text-shrinika-gold"></i>
+              <span>High Resolution (3-4 Photos)</span>
+            </div>
+
+            <div class="absolute top-3 right-3 bg-shrinika-magenta text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full border border-shrinika-gold shadow-sm flex items-center gap-1">
+              <i class="fa-solid fa-arrows-left-right text-shrinika-gold"></i>
+              <span>Stretchable</span>
+            </div>
+          </div>
+
+          <!-- Thumbnail Selectors (3-4 Images + 1 Video Button) -->
+          <div id="mediaThumbnailsRow" class="grid grid-cols-5 gap-2 pt-1">
+            <!-- Dynamic Thumbnails injected via JS -->
+          </div>
+        </div>
+
+        <!-- Product Specs & Action Panel (Cols 8-12) -->
+        <div class="md:col-span-5 p-4 sm:p-6 sm:pl-0 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            
+            <!-- Category Tag & Reviews -->
+            <div class="flex items-center justify-between">
+              <span id="detailCategoryBadge" class="text-xs uppercase tracking-widest text-shrinika-magenta font-bold bg-shrinika-softpink border border-shrinika-magenta/20 px-3 py-0.5 rounded">
+                Sweater
+              </span>
+              <span id="detailRating" class="text-xs text-stone-600 font-medium flex items-center gap-1">
+                <i class="fa-solid fa-star text-amber-500 text-[10px]"></i> 4.9 (148 reviews)
+              </span>
+            </div>
+
+            <!-- Title & Asset ID (Prompt specified: Sweater Top Asset no:- 10001) -->
+            <div>
+              <h1 id="detailProductTitle" class="font-regal text-2xl sm:text-3xl font-bold text-shrinika-darkmagenta leading-tight">
+                Sweater Top
+              </h1>
+              <p class="text-xs text-stone-500 font-mono mt-1">
+                Asset no:- <span id="detailAssetNumber" class="font-bold text-shrinika-magenta">10001</span>
+              </p>
+            </div>
+
+            <!-- Prominent Price Box: Price: 299/- -->
+            <div class="p-3.5 bg-shrinika-champagne border border-shrinika-bordergold rounded-xl flex items-baseline justify-between shadow-sm">
+              <div>
+                <span class="text-xs text-stone-400 line-through mr-1.5 font-medium">M.R.P ₹799</span>
+                <span id="detailProductPrice" class="font-regal text-2xl sm:text-3xl font-extrabold text-shrinika-magenta">
+                  Price: 299/-
+                </span>
+              </div>
+              <span class="text-[11px] bg-white text-shrinika-darkmagenta font-bold px-2.5 py-1 rounded-lg border border-shrinika-gold shadow-sm">
+                Save 62%
+              </span>
+            </div>
+
+            <!-- Size Spec: Size: Free (S/36 - 3XL/46) & Stretchable -->
+            <div class="space-y-2 p-3.5 rounded-xl border border-shrinika-bordergold bg-white shadow-sm">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-shrinika-darkmagenta uppercase tracking-wider">Garment Sizing:</span>
+                <button id="openSizeChartModalFromDetail" class="text-[11px] text-shrinika-gold hover:text-shrinika-magenta hover:underline flex items-center gap-1 font-semibold">
+                  <i class="fa-solid fa-ruler-combined text-[10px]"></i> View Size Chart
+                </button>
+              </div>
+              
+              <div class="p-2.5 rounded-lg bg-shrinika-softpink border border-shrinika-magenta/20 flex items-center justify-between">
+                <span id="detailProductSize" class="font-medium text-xs sm:text-sm text-shrinika-darkmagenta font-semibold">
+                  Size: Free (S/36 - 3XL/46)
+                </span>
+                <span class="text-[11px] font-bold text-white bg-shrinika-magenta px-2.5 py-0.5 rounded shadow-sm">
+                  Stretchable
+                </span>
+              </div>
+
+              <p class="text-[11px] text-stone-600 leading-normal font-light">
+                Tailored with high elasticity Lycra & Merino wool blends. Expands smoothly from Small (36" bust/chest) up to 3XL (46" bust/chest) without sagging.
+              </p>
+            </div>
+
+            <!-- Fabric and Warmth Attributes -->
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <div class="p-2.5 bg-shrinika-champagne rounded-lg border border-shrinika-bordergold/60">
+                <span class="text-shrinika-gold block text-[10px] uppercase font-bold tracking-wider">Fabric</span>
+                <span id="detailProductFabric" class="font-medium text-stone-800">Cashmere Feel Knit Fleece</span>
+              </div>
+              <div class="p-2.5 bg-shrinika-champagne rounded-lg border border-shrinika-bordergold/60">
+                <span class="text-shrinika-gold block text-[10px] uppercase font-bold tracking-wider">Comfort Level</span>
+                <span id="detailProductWarmth" class="font-medium text-stone-800">High Winter Warmth</span>
+              </div>
+            </div>
+
+            <!-- Color Palette -->
+            <div>
+              <span class="text-xs font-semibold text-stone-700 block mb-1.5">Available Colors:</span>
+              <div id="detailColorsContainer" class="flex flex-wrap gap-1.5">
+                <!-- Color pills dynamically generated -->
+              </div>
+            </div>
+
+          </div>
+
+          <!-- BUY / ENQUIRY - SENT TO WHATSAPP (Direct Customer Action) -->
+          <div class="pt-4 border-t border-shrinika-bordergold space-y-2.5">
+            <button
+              id="buyWhatsAppBtn"
+              class="w-full bg-royal-gradient hover:opacity-95 active:scale-[0.99] text-white py-3.5 px-4 rounded-xl font-medium text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-magentaglow border border-shrinika-gold transition-all cursor-pointer"
+            >
+              <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+              <span class="font-semibold tracking-wide">Buy / Enquiry on WhatsApp</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs text-shrinika-lightgold opacity-90"></i>
+            </button>
+
+            <div class="flex items-center justify-center gap-4 text-[11px] text-stone-500 pt-1">
+              <span class="flex items-center gap-1 font-medium">
+                <i class="fa-solid fa-bolt text-shrinika-gold text-[10px]"></i> Quick WhatsApp Confirmation
+              </span>
+              <span class="flex items-center gap-1 font-medium">
+                <i class="fa-solid fa-shield-halved text-shrinika-magenta text-[10px]"></i> 100% Quality Inspected
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- 3. BOTTOM FOOTER (Contact, FAQ, Size Chart) -->
+  <footer class="mt-auto border-t border-shrinika-bordergold bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-4">
+      
+      <!-- Footer Nav Links: Contact, FAQ, Size Chart -->
+      <div class="flex flex-wrap items-center justify-center sm:justify-between gap-4 py-2 border-b border-stone-100">
+        <div class="flex items-center gap-6">
+          <button id="openContactModalBtn" class="text-xs sm:text-sm font-semibold text-stone-700 hover:text-shrinika-magenta transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-phone text-shrinika-gold text-xs"></i>
+            <span>Contact</span>
+          </button>
+          
+          <button id="openFaqModalBtn" class="text-xs sm:text-sm font-semibold text-stone-700 hover:text-shrinika-magenta transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-circle-question text-shrinika-gold text-xs"></i>
+            <span>FAQ</span>
+          </button>
+
+          <button id="openSizeChartModalBtn" class="text-xs sm:text-sm font-semibold text-stone-700 hover:text-shrinika-magenta transition-colors flex items-center gap-1.5">
+            <i class="fa-solid fa-ruler-combined text-shrinika-gold text-xs"></i>
+            <span>Size Chart</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2 text-[11px] text-stone-500">
+          <span class="font-regal text-shrinika-darkmagenta font-bold">SHRINIKA’S ELEGANCE</span>
+          <span>•</span>
+          <span>© <span id="currentYear"></span> All Rights Reserved</span>
+        </div>
+      </div>
+
+      <div class="text-center pt-3 pb-1 text-[11px] text-stone-500 font-script text-base">
+        “Feel the beauty of fashion — Free Size Luxury Knitwear (S/36 - 3XL/46)”
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- MODAL WINDOWS (FAQ, SIZE CHART, CONTACT)                   -->
+  <!-- ========================================================= -->
+
+  <!-- Modal 1: FAQ Modal -->
+  <div id="faqModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-shrinika-bordergold relative max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-stone-100">
+        <h3 class="font-regal text-lg font-bold text-shrinika-darkmagenta flex items-center gap-2">
+          <i class="fa-solid fa-circle-question text-shrinika-gold"></i> Frequently Asked Questions
+        </h3>
+        <button class="modal-close-btn p-1 text-stone-400 hover:text-shrinika-magenta rounded-full">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="mt-4 space-y-3 text-xs sm:text-sm text-stone-700">
+        <div class="p-3 bg-shrinika-champagne rounded-xl border border-shrinika-bordergold/60">
+          <p class="font-bold text-shrinika-darkmagenta">Q: How does Free Size (S/36 - 3XL/46) work?</p>
+          <p class="mt-1 text-stone-600 leading-relaxed text-xs">
+            Our garments use specialized 4-way stretch Italian knit weaves. It gently relaxes to contour a size 36 (Small) and effortlessly stretches up to a size 46 (3XL) without losing its original form or seams.
+          </p>
+        </div>
+
+        <div class="p-3 bg-shrinika-champagne rounded-xl border border-shrinika-bordergold/60">
+          <p class="font-bold text-shrinika-darkmagenta">Q: What happens after I click "Buy / Enquiry on WhatsApp"?</p>
+          <p class="mt-1 text-stone-600 leading-relaxed text-xs">
+            A WhatsApp chat opens with our verified boutique concierge containing your exact product title, asset number, size, and price. Our team confirms availability and guides you through instant payment & dispatch.
+          </p>
+        </div>
+
+        <div class="p-3 bg-shrinika-champagne rounded-xl border border-shrinika-bordergold/60">
+          <p class="font-bold text-shrinika-darkmagenta">Q: Is the price really flat ₹299/-?</p>
+          <p class="mt-1 text-stone-600 leading-relaxed text-xs">
+            Yes! This direct-to-consumer digital catalogue features promotional rates of ₹299/- for all featured tops, shrugs, and bottoms.
+          </p>
+        </div>
+      </div>
+
+      <button class="modal-close-btn mt-5 w-full py-2.5 bg-shrinika-magenta text-white rounded-xl text-xs font-bold hover:bg-shrinika-darkmagenta shadow-sm">
+        Close FAQ
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal 2: Size Chart Modal (Free Size S/36 - 3XL/46) -->
+  <div id="sizeChartModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-shrinika-bordergold relative max-h-[85vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-stone-100">
+        <h3 class="font-regal text-lg font-bold text-shrinika-darkmagenta flex items-center gap-2">
+          <i class="fa-solid fa-ruler-combined text-shrinika-gold"></i> Size Chart: Free (S/36 - 3XL/46)
+        </h3>
+        <button class="modal-close-btn p-1 text-stone-400 hover:text-shrinika-magenta rounded-full">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="mt-4 space-y-3">
+        <p class="text-xs text-stone-600">
+          The table below indicates how the stretchable elastane knit flexes across body measurements:
+        </p>
+
+        <div class="overflow-hidden border border-shrinika-bordergold rounded-xl text-xs">
+          <table class="w-full text-left">
+            <thead class="bg-shrinika-champagne text-shrinika-darkmagenta font-bold border-b border-shrinika-bordergold">
+              <tr>
+                <th class="p-2.5">Standard Size</th>
+                <th class="p-2.5">Chest / Bust</th>
+                <th class="p-2.5">Waist Range</th>
+                <th class="p-2.5">Feel</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-stone-100 text-stone-700">
+              <tr>
+                <td class="p-2.5 font-semibold text-shrinika-darkmagenta">S (Small)</td>
+                <td class="p-2.5">36"</td>
+                <td class="p-2.5">28" - 30"</td>
+                <td class="p-2.5 text-emerald-700 font-medium">Breezy Relaxed</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold text-shrinika-darkmagenta">M (Medium)</td>
+                <td class="p-2.5">38"</td>
+                <td class="p-2.5">30" - 32"</td>
+                <td class="p-2.5 text-emerald-700 font-medium">Comfort Fit</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold text-shrinika-darkmagenta">L (Large)</td>
+                <td class="p-2.5">40"</td>
+                <td class="p-2.5">32" - 34"</td>
+                <td class="p-2.5 text-emerald-700 font-medium">Tailored Flattering</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold text-shrinika-darkmagenta">XL</td>
+                <td class="p-2.5">42"</td>
+                <td class="p-2.5">34" - 36"</td>
+                <td class="p-2.5 text-emerald-700 font-medium">Contoured Fit</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 font-semibold text-shrinika-darkmagenta">2XL</td>
+                <td class="p-2.5">44"</td>
+                <td class="p-2.5">36" - 38"</td>
+                <td class="p-2.5 text-emerald-700 font-medium">Cozy Hold</td>
+              </tr>
+              <tr class="bg-shrinika-softpink">
+                <td class="p-2.5 font-bold text-shrinika-magenta">3XL</td>
+                <td class="p-2.5 font-bold text-shrinika-magenta">46"</td>
+                <td class="p-2.5 font-bold text-shrinika-magenta">38" - 42"</td>
+                <td class="p-2.5 text-shrinika-magenta font-bold">Max Stretch</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="p-3 bg-shrinika-champagne rounded-xl text-[11px] text-shrinika-darkmagenta border border-shrinika-bordergold">
+          💡 <strong>Guaranteed Fit:</strong> You do not have to select a size variant when ordering. The garment naturally conforms between sizes 36 to 46.
+        </div>
+      </div>
+
+      <button class="modal-close-btn mt-5 w-full py-2.5 bg-shrinika-magenta text-white rounded-xl text-xs font-bold hover:bg-shrinika-darkmagenta shadow-sm">
+        Understood
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal 3: Contact Modal -->
+  <div id="contactModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-shrinika-bordergold relative">
+      <div class="flex items-center justify-between pb-3 border-b border-stone-100">
+        <h3 class="font-regal text-lg font-bold text-shrinika-darkmagenta flex items-center gap-2">
+          <i class="fa-solid fa-phone text-shrinika-gold"></i> Contact Shrinika’s Elegance
+        </h3>
+        <button class="modal-close-btn p-1 text-stone-400 hover:text-shrinika-magenta rounded-full">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <div class="mt-4 space-y-3.5 text-xs sm:text-sm text-stone-700">
+        <p class="text-stone-600">
+          Our customer styling desk is available 7 days a week for direct support, styling tips, and order queries.
+        </p>
+
+        <div class="p-3.5 rounded-xl border border-shrinika-bordergold bg-shrinika-softpink flex items-center justify-between">
+          <div>
+            <span class="text-[10px] uppercase font-bold text-shrinika-magenta block tracking-wider">Direct WhatsApp Helpline</span>
+            <p class="font-mono text-sm font-bold text-shrinika-darkmagenta mt-0.5">+91 98765 43210</p>
+          </div>
+          <button 
+            onclick="window.open('https://wa.me/919876543210?text=Hello%20Shrinika%E2%80%99s%20Elegance%2C%20I%20have%20an%20enquiry%20regarding%20your%20collection.', '_blank')"
+            class="bg-shrinika-magenta hover:bg-shrinika-darkmagenta text-white px-3.5 py-1.5 rounded-lg text-xs font-semibold shadow-sm"
+          >
+            Chat Now
+          </button>
+        </div>
+
+        <div class="p-3 bg-shrinika-champagne rounded-xl border border-shrinika-bordergold/60 space-y-1 text-xs">
+          <p class="text-[10px] text-shrinika-gold uppercase font-bold tracking-wider">Store Timings</p>
+          <p class="font-semibold text-shrinika-darkmagenta">Monday – Sunday: 9:30 AM to 9:00 PM</p>
+          <p class="text-stone-500 text-[11px]">Instant order confirmations sent on WhatsApp within minutes.</p>
+        </div>
+      </div>
+
+      <button class="modal-close-btn mt-5 w-full py-2.5 bg-shrinika-magenta text-white rounded-xl text-xs font-bold hover:bg-shrinika-darkmagenta shadow-sm">
+        Close Window
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // --- BRAND CATALOG DATA DEFINITIONS ---
+    const CATEGORIES_DATA = {
+      Winter: {
+        Women: [
+          { id: 'w-sweater', name: 'Sweater', count: '14 items', img: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80' },
+          { id: 'w-cardigan', name: 'Cardigan', count: '10 items', img: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=600&q=80' },
+          { id: 'w-shrugs', name: 'Shrugs', count: '8 items', img: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80' },
+          { id: 'w-wskirt', name: 'Winter Skirt', count: '6 items', img: 'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=600&q=80' },
+          { id: 'w-wpants', name: 'Winter Pants & Palazzo', count: '12 items', img: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80' },
+          { id: 'w-hoodie', name: 'Hoodie', count: '16 items', img: 'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=80' },
+          { id: 'w-bodycon', name: 'Bodycon', count: '9 items', img: 'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80' },
+          { id: 'w-coat', name: 'Coat', count: '11 items', img: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80' },
+        ],
+        Men: [
+          { id: 'm-sweater', name: 'Sweater', count: '12 items', img: 'https://images.unsplash.com/photo-1614975058789-41316d0e2e9c?auto=format&fit=crop&w=600&q=80' },
+          { id: 'm-shrugs', name: 'Shrugs', count: '6 items', img: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=600&q=80' },
+          { id: 'm-hoodie', name: 'Hoodie', count: '18 items', img: 'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=600&q=80' },
+          { id: 'm-ljacket', name: 'Light Jacket', count: '14 items', img: 'https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=600&q=80' },
+          { id: 'm-hjacket', name: 'Heavy Jacket', count: '9 items', img: 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=600&q=80' },
+          { id: 'm-joggers', name: 'Joggers & Pants', count: '15 items', img: 'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=600&q=80' },
+          { id: 'm-jeans', name: 'Winter Jeans', count: '11 items', img: 'https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=600&q=80' },
+        ],
+        Kids: [
+          { id: 'k-sweater', name: 'Kids Knit Sweaters', count: '8 items', img: 'https://images.unsplash.com/photo-1622290291468-a28f7a7dc6a8?auto=format&fit=crop&w=600&q=80' },
+          { id: 'k-hoodie', name: 'Kids Winter Hoodies', count: '10 items', img: 'https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&w=600&q=80' },
+          { id: 'k-jacket', name: 'Kids Warm Jackets', count: '7 items', img: 'https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?auto=format&fit=crop&w=600&q=80' }
+        ]
+      },
+      Summer: {
+        Women: [
+          { id: 's-w-top', name: 'Cotton Crop Tops', count: '15 items', img: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80' },
+          { id: 's-w-dress', name: 'Summer Maxi Dress', count: '12 items', img: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=600&q=80' },
+          { id: 's-w-linen', name: 'Linen Breezy Trousers', count: '9 items', img: 'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=600&q=80' },
+        ],
+        Men: [
+          { id: 's-m-shirt', name: 'Linen Shirts', count: '14 items', img: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=600&q=80' },
+          { id: 's-m-tee', name: 'Cotton T-Shirts', count: '20 items', img: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80' },
+        ],
+        Kids: [
+          { id: 's-k-tee', name: 'Summer Tees & Shorts', count: '12 items', img: 'https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=600&q=80' }
+        ]
+      }
+    };
+
+    const PRODUCTS_DATA = [
+      // WOMEN WINTER
+      {
+        id: 'prod-10001',
+        assetNo: '10001',
+        categoryId: 'w-sweater',
+        categoryName: 'Sweater',
+        title: 'Sweater Top',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Fine Ribbed Wool Spun Fleece',
+        warmth: 'High Warmth (All-day stretch)',
+        colors: ['Royal Magenta', 'Warm Beige', 'Dusty Rose', 'Obsidian Black'],
+        images: [
+          'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-autumn-clothes-turning-around-40816-large.mp4',
+        rating: '4.9 (148 reviews)'
+      },
+      {
+        id: 'prod-10002',
+        assetNo: '10002',
+        categoryId: 'w-sweater',
+        categoryName: 'Sweater',
+        title: 'Cable Knit Cozy Pullover',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Cashmere Blend Soft-Touch Acrylic Knit',
+        warmth: 'Extra Warmth',
+        colors: ['Ivory Cream', 'Emerald Forest', 'Camel Gold'],
+        images: [
+          'https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1516762689617-e1cffcef479d?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-autumn-clothes-turning-around-40816-large.mp4',
+        rating: '4.8 (89 reviews)'
+      },
+      {
+        id: 'prod-10003',
+        assetNo: '10003',
+        categoryId: 'w-cardigan',
+        categoryName: 'Cardigan',
+        title: 'Classic Pearl Buttoned Cardigan',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Modal Ribbed Wool Blend',
+        warmth: 'Medium-High Warmth',
+        colors: ['Oatmeal', 'Powder Berry', 'Jet Black'],
+        images: [
+          'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (112 reviews)'
+      },
+      {
+        id: 'prod-10004',
+        assetNo: '10004',
+        categoryId: 'w-cardigan',
+        categoryName: 'Cardigan',
+        title: 'Longline Flow Winter Cardigan',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Thermal Elastic Lycra Thread',
+        warmth: 'Medium Warmth',
+        colors: ['Royal Burgundy', 'Charcoal Grey'],
+        images: [
+          'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.7 (76 reviews)'
+      },
+      {
+        id: 'prod-10005',
+        assetNo: '10005',
+        categoryId: 'w-shrugs',
+        categoryName: 'Shrugs',
+        title: 'Winter Velvet Shrug Bolero',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Crushed Velvet 4-Way Stretch',
+        warmth: 'Light-Medium Warmth',
+        colors: ['Magenta Velvet', 'Midnight Navy', 'Black'],
+        images: [
+          'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.8 (64 reviews)'
+      },
+      {
+        id: 'prod-10006',
+        assetNo: '10006',
+        categoryId: 'w-shrugs',
+        categoryName: 'Shrugs',
+        title: 'Batwing Warm Knit Wrap',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Brushed Acrylic Yarn',
+        warmth: 'Medium Warmth',
+        colors: ['Tan Sand', 'Frost Grey'],
+        images: [
+          'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (53 reviews)'
+      },
+      {
+        id: 'prod-10007',
+        assetNo: '10007',
+        categoryId: 'w-wskirt',
+        categoryName: 'Winter Skirt',
+        title: 'Pleated Flannel Warm Skirt',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Fleece Lined Wool Flannel',
+        warmth: 'High Warmth',
+        colors: ['Houndstooth', 'Solid Ebony'],
+        images: [
+          'https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (91 reviews)'
+      },
+      {
+        id: 'prod-10008',
+        assetNo: '10008',
+        categoryId: 'w-wpants',
+        categoryName: 'Winter Pants & Palazzo',
+        title: 'Fleece Lined Palazzo Trouser',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Double-Weave Thermal Crepe',
+        warmth: 'High Warmth',
+        colors: ['Charcoal', 'Caramel', 'Cream'],
+        images: [
+          'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (132 reviews)'
+      },
+      {
+        id: 'prod-10009',
+        assetNo: '10009',
+        categoryId: 'w-hoodie',
+        categoryName: 'Hoodie',
+        title: 'Oversized Sherpa Winter Hoodie',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Brushed French Terry Cotton',
+        warmth: 'Extra Warmth',
+        colors: ['Baby Pink', 'Almond', 'Lilac'],
+        images: [
+          'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (240 reviews)'
+      },
+      {
+        id: 'prod-10010',
+        assetNo: '10010',
+        categoryId: 'w-bodycon',
+        categoryName: 'Bodycon',
+        title: 'Ribbed Knit Winter Bodycon Dress',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Micro-Spandex Wool Rib',
+        warmth: 'Medium-High Warmth',
+        colors: ['Magenta Plum', 'Espresso', 'Emerald'],
+        images: [
+          'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (175 reviews)'
+      },
+      {
+        id: 'prod-10011',
+        assetNo: '10011',
+        categoryId: 'w-coat',
+        categoryName: 'Coat',
+        title: 'Tailored Wrap Trench Coat',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Heavy Wool Poly-Fleece Compound',
+        warmth: 'Maximum Arctic Warmth',
+        colors: ['Camel Beige', 'Charcoal Heather'],
+        images: [
+          'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '5.0 (214 reviews)'
+      },
+
+      // MEN WINTER
+      {
+        id: 'prod-20001',
+        assetNo: '20001',
+        categoryId: 'm-sweater',
+        categoryName: 'Sweater',
+        title: 'Men Turtleneck Knit Sweater',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Micro-Knit Soft Spun Wool',
+        warmth: 'High Warmth',
+        colors: ['Dark Olive', 'Slate Grey', 'Navy'],
+        images: [
+          'https://images.unsplash.com/photo-1614975058789-41316d0e2e9c?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-fashion-model-in-autumn-clothes-turning-around-40816-large.mp4',
+        rating: '4.8 (118 reviews)'
+      },
+      {
+        id: 'prod-20002',
+        assetNo: '20002',
+        categoryId: 'm-shrugs',
+        categoryName: 'Shrugs',
+        title: 'Men Shawl Collar Draped Cardigan Shrug',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Ribbed Cotton-Acrylic Blend',
+        warmth: 'Medium Warmth',
+        colors: ['Stone Grey', 'Jet Black'],
+        images: [
+          'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.8 (60 reviews)'
+      },
+      {
+        id: 'prod-20003',
+        assetNo: '20003',
+        categoryId: 'm-hoodie',
+        categoryName: 'Hoodie',
+        title: 'Men Heavyweight Fleece Hoodie',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Organic Cotton 420 GSM Terry',
+        warmth: 'Maximum Warmth',
+        colors: ['Heather Grey', 'Navy Blue', 'Wine'],
+        images: [
+          'https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (310 reviews)'
+      },
+      {
+        id: 'prod-20004',
+        assetNo: '20004',
+        categoryId: 'm-ljacket',
+        categoryName: 'Light Jacket',
+        title: 'Men Windproof Bomber Jacket',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Micro-Ripstop Wind Shell',
+        warmth: 'Medium Warmth',
+        colors: ['Khaki Tan', 'Midnight Black'],
+        images: [
+          'https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.8 (88 reviews)'
+      },
+      {
+        id: 'prod-20005',
+        assetNo: '20005',
+        categoryId: 'm-hjacket',
+        categoryName: 'Heavy Jacket',
+        title: 'Men Puffer Snow Thermal Jacket',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Water-Resistant Thermal Bonded Baffle',
+        warmth: 'Arctic Warmth',
+        colors: ['Arctic White', 'Jet Black'],
+        images: [
+          'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '5.0 (202 reviews)'
+      },
+      {
+        id: 'prod-20006',
+        assetNo: '20006',
+        categoryId: 'm-joggers',
+        categoryName: 'Joggers & Pants',
+        title: 'Men Thermal Fleece Joggers',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Heavy Cotton Fleece 360 GSM',
+        warmth: 'High Warmth',
+        colors: ['Melange Grey', 'Carbon Black', 'Olive'],
+        images: [
+          'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.8 (184 reviews)'
+      },
+      {
+        id: 'prod-20007',
+        assetNo: '20007',
+        categoryId: 'm-jeans',
+        categoryName: 'Winter Jeans',
+        title: 'Men Fleece-Lined Denim Jeans',
+        price: 299,
+        size: 'Free (S/36 - 3XL/46)',
+        stretchable: true,
+        fabric: 'Indigo Denim with Velvet Fleece Inlay',
+        warmth: 'High Warmth',
+        colors: ['Dark Indigo', 'Washed Charcoal', 'Mid Blue'],
+        images: [
+          'https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=900&q=85',
+          'https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=900&q=85'
+        ],
+        videoUrl: '',
+        rating: '4.9 (167 reviews)'
+      }
+    ];
+
+    // --- APPLICATION STATE ---
+    const state = {
+      season: 'Winter',       // Winter (by default) | Summer
+      audience: 'Women',     // Women (by default) | Men | Kids
+      searchQuery: '',
+      activeCategory: null,
+      activeProduct: null,
+      activeMediaIndex: 0,
+      currentView: 'home'
+    };
+
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    function navigateTo(viewName) {
+      state.currentView = viewName;
+      const viewHome = document.getElementById('viewHome');
+      const viewCategory = document.getElementById('viewCategory');
+      const viewProduct = document.getElementById('viewProduct');
+      const mobileBackBtn = document.getElementById('mobileBackBtn');
+      const mobileBackText = document.getElementById('mobileBackText');
+
+      viewHome.classList.add('hidden');
+      viewCategory.classList.add('hidden');
+      viewProduct.classList.add('hidden');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (viewName === 'home') {
+        viewHome.classList.remove('hidden');
+        mobileBackBtn.classList.add('hidden');
+        mobileBackBtn.classList.remove('flex');
+        state.activeCategory = null;
+        state.activeProduct = null;
+        renderCategories();
+      } else if (viewName === 'category') {
+        viewCategory.classList.remove('hidden');
+        mobileBackBtn.classList.remove('hidden');
+        mobileBackBtn.classList.add('flex');
+        mobileBackText.textContent = 'Categories';
+        renderCategoryProducts();
+      } else if (viewName === 'product') {
+        viewProduct.classList.remove('hidden');
+        mobileBackBtn.classList.remove('hidden');
+        mobileBackBtn.classList.add('flex');
+        mobileBackText.textContent = state.activeCategory ? state.activeCategory.name : 'Back';
+        renderProductDetail();
+      }
+    }
+
+    function renderCategories() {
+      const grid = document.getElementById('categoryGrid');
+      const noMessage = document.getElementById('noCategoriesMessage');
+      const contextBadge = document.getElementById('activeContextBadge');
+      grid.innerHTML = '';
+
+      contextBadge.textContent = `${state.season} • ${state.audience}`;
+
+      const seasonObj = CATEGORIES_DATA[state.season] || CATEGORIES_DATA['Winter'];
+      const categoriesList = seasonObj[state.audience] || [];
+
+      // Filter by search query if any
+      const filtered = categoriesList.filter(cat => {
+        if (!state.searchQuery.trim()) return true;
+        return cat.name.toLowerCase().includes(state.searchQuery.toLowerCase().trim());
+      });
+
+      if (filtered.length === 0) {
+        noMessage.classList.remove('hidden');
+        return;
+      } else {
+        noMessage.classList.add('hidden');
+      }
+
+      filtered.forEach(cat => {
+        const card = document.createElement('div');
+        card.className = "group relative bg-white rounded-xl overflow-hidden border border-shrinika-bordergold shadow-sm hover:shadow-regal transition-all cursor-pointer flex flex-col hover:border-shrinika-magenta";
+        card.innerHTML = `
+          <div class="relative aspect-[4/5] w-full overflow-hidden bg-stone-100">
+            <img 
+              src="${cat.img}" 
+              alt="${cat.name}" 
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-shrinika-darkmagenta/90 via-shrinika-magenta/25 to-transparent"></div>
+            <div class="absolute bottom-2.5 left-2.5 right-2.5 text-white">
+              <p class="font-regal font-bold text-sm sm:text-base leading-tight group-hover:text-shrinika-lightgold transition-colors drop-shadow">
+                ${cat.name}
+              </p>
+              <p class="text-[10px] text-shrinika-lightgold font-light mt-0.5 tracking-wider">
+                ${cat.count}
+              </p>
+            </div>
+          </div>
+          <div class="p-2 sm:p-2.5 flex items-center justify-between bg-shrinika-champagne/70 border-t border-shrinika-bordergold/60">
+            <span class="text-[11px] font-semibold text-shrinika-darkmagenta">Free Size (S - 3XL)</span>
+            <i class="fa-solid fa-arrow-right text-[10px] text-shrinika-gold group-hover:text-shrinika-magenta group-hover:translate-x-0.5 transition-all"></i>
+          </div>
+        `;
+        card.addEventListener('click', () => {
+          state.activeCategory = cat;
+          navigateTo('category');
+        });
+        grid.appendChild(card);
+      });
+    }
+
+    function renderCategoryProducts() {
+      if (!state.activeCategory) return;
+      const grid = document.getElementById('productsGrid');
+      const noMessage = document.getElementById('noProductsMessage');
+      const breadcrumb = document.getElementById('categoryBreadcrumbTag');
+      const pageTitle = document.getElementById('categoryPageTitle');
+
+      breadcrumb.textContent = `${state.season} • ${state.audience}`;
+      pageTitle.textContent = state.activeCategory.name;
+      grid.innerHTML = '';
+
+      let products = PRODUCTS_DATA.filter(p => p.categoryId === state.activeCategory.id);
+
+      // Graceful fallback dummy products for unpopulated categories
+      if (products.length === 0) {
+        products = [
+          {
+            id: `gen-${state.activeCategory.id}-1`,
+            assetNo: '10041',
+            categoryId: state.activeCategory.id,
+            categoryName: state.activeCategory.name,
+            title: `${state.activeCategory.name} Top`,
+            price: 299,
+            size: 'Free (S/36 - 3XL/46)',
+            stretchable: true,
+            fabric: 'Luxe Stretch Ribbed Thermal Spun',
+            warmth: 'High Warmth',
+            colors: ['Royal Magenta', 'Charcoal Black', 'Oatmeal'],
+            images: [
+              state.activeCategory.img,
+              'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85',
+              'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=85'
+            ],
+            videoUrl: '',
+            rating: '4.9 (88 reviews)'
+          },
+          {
+            id: `gen-${state.activeCategory.id}-2`,
+            assetNo: '10042',
+            categoryId: state.activeCategory.id,
+            categoryName: state.activeCategory.name,
+            title: `Classic ${state.activeCategory.name}`,
+            price: 299,
+            size: 'Free (S/36 - 3XL/46)',
+            stretchable: true,
+            fabric: 'Cashmere Feel Multi-Knit',
+            warmth: 'Medium-High Warmth',
+            colors: ['Burgundy', 'Sage Green'],
+            images: [
+              'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=85',
+              state.activeCategory.img
+            ],
+            videoUrl: '',
+            rating: '4.8 (56 reviews)'
+          }
+        ];
+      }
+
+      if (products.length === 0) {
+        noMessage.classList.remove('hidden');
+        return;
+      } else {
+        noMessage.classList.add('hidden');
+      }
+
+      // MANDATORY REQUIREMENT: Small photo (2 product parallely display)
+      // Products rendered into 2-columns (grid-cols-2)
+      products.forEach(prod => {
+        const card = document.createElement('div');
+        card.className = "group bg-white rounded-xl border border-shrinika-bordergold overflow-hidden shadow-sm hover:shadow-regal hover:border-shrinika-magenta transition-all cursor-pointer flex flex-col";
+        card.innerHTML = `
+          <!-- Small photo -->
+          <div class="relative aspect-[3/4] bg-stone-100 overflow-hidden">
+            <img 
+              src="${prod.images[0]}" 
+              alt="${prod.title}" 
+              class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" 
+              loading="lazy"
+            />
+            
+            <div class="absolute top-2 left-2 flex flex-col gap-1">
+              ${prod.stretchable ? `
+                <span class="bg-shrinika-magenta/95 backdrop-blur text-white text-[10px] font-bold px-2 py-0.5 rounded-full border border-shrinika-gold shadow-sm">
+                  Stretchable
+                </span>
+              ` : ''}
+            </div>
+
+            <div class="absolute bottom-2 right-2 bg-stone-900/80 backdrop-blur text-shrinika-lightgold text-[10px] px-1.5 py-0.5 rounded font-mono font-semibold">
+              #${prod.assetNo}
+            </div>
+          </div>
+
+          <!-- Strict card specs: Title, Size, Stretchable, Price: 299/- -->
+          <div class="p-3 sm:p-4 flex flex-col flex-1 justify-between bg-white">
+            <div>
+              <h4 class="font-regal font-bold text-sm sm:text-base text-shrinika-darkmagenta group-hover:text-shrinika-magenta transition-colors line-clamp-1">
+                ${prod.title}
+              </h4>
+              <p class="text-[11px] text-stone-600 mt-0.5 font-medium line-clamp-1">
+                Size: ${prod.size}
+              </p>
+              
+              <div class="mt-1.5 flex items-center gap-1.5">
+                <span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+                <span class="text-[10px] font-semibold text-shrinika-gold uppercase tracking-wider">
+                  Stretchable
+                </span>
+              </div>
+            </div>
+
+            <div class="mt-3 pt-2.5 border-t border-shrinika-champagne flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-stone-400 line-through mr-1 font-medium">₹799</span>
+                <span class="font-regal text-base sm:text-lg font-bold text-shrinika-magenta">
+                  Price: ${prod.price}/-
+                </span>
+              </div>
+              
+              <div class="w-7 h-7 rounded-lg bg-shrinika-softpink text-shrinika-magenta flex items-center justify-center border border-shrinika-magenta/20 group-hover:bg-shrinika-magenta group-hover:text-white transition-colors">
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </div>
+            </div>
+          </div>
+        `;
+        card.addEventListener('click', () => {
+          state.activeProduct = prod;
+          state.activeMediaIndex = 0;
+          navigateTo('product');
+        });
+        grid.appendChild(card);
+      });
+    }
+
+    function renderProductDetail() {
+      const prod = state.activeProduct;
+      if (!prod) return;
+
+      document.getElementById('detailAssetTagTop').textContent = `Asset no:- ${prod.assetNo}`;
+      document.getElementById('backToCategoryLabel').textContent = `Back to ${state.activeCategory ? state.activeCategory.name : 'Catalog'}`;
+      document.getElementById('detailCategoryBadge').textContent = prod.categoryName;
+      document.getElementById('detailRating').innerHTML = `<i class="fa-solid fa-star text-amber-500 text-[10px]"></i> ${prod.rating}`;
+      document.getElementById('detailProductTitle').textContent = prod.title;
+      document.getElementById('detailAssetNumber').textContent = prod.assetNo;
+      document.getElementById('detailProductPrice').textContent = `Price: ${prod.price}/-`;
+      document.getElementById('detailProductSize').textContent = `Size: ${prod.size}`;
+      document.getElementById('detailProductFabric').textContent = prod.fabric || 'Knitted Wool Blend';
+      document.getElementById('detailProductWarmth').textContent = prod.warmth || 'High Warmth';
+
+      // Colors palette
+      const colorsContainer = document.getElementById('detailColorsContainer');
+      colorsContainer.innerHTML = '';
+      const colors = prod.colors || ['Royal Magenta', 'Warm Beige', 'Charcoal Black'];
+      colors.forEach((col, idx) => {
+        const btn = document.createElement('span');
+        btn.className = `text-xs px-2.5 py-1 rounded-full border transition-all ${
+          idx === 0 
+            ? 'bg-shrinika-magenta text-white border-shrinika-gold font-semibold shadow-sm' 
+            : 'bg-shrinika-champagne text-shrinika-darkmagenta border-shrinika-bordergold'
+        }`;
+        btn.textContent = col;
+        colorsContainer.appendChild(btn);
+      });
+
+      // Gallery Showcase Thumbnails & Active Selector
+      renderMediaGallery(prod);
+
+      // WhatsApp Button Handler (Prompt exact requirement)
+      const buyBtn = document.getElementById('buyWhatsAppBtn');
+      buyBtn.onclick = function() {
+        const phone = '919876543210';
+        const message = `Hello Shrinika's Elegance! ✨\n\nI would like to buy / enquire about:\n• *Product:* ${prod.title}\n• *Asset no:* ${prod.assetNo}\n• *Size:* ${prod.size}\n• *Stretchable:* Yes (Free Size fit)\n• *Price:* ${prod.price}/-\n\nPlease share delivery details and confirm my order.`;
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+      };
+    }
+
+    function renderMediaGallery(prod) {
+      const thumbsContainer = document.getElementById('mediaThumbnailsRow');
+      const mainImg = document.getElementById('mainDisplayImage');
+      const mainVideoContainer = document.getElementById('mainVideoPlayerContainer');
+      const mainVideo = document.getElementById('mainDisplayVideo');
+      const videoFallback = document.getElementById('videoFallbackMessage');
+
+      thumbsContainer.innerHTML = '';
+
+      // High resolution images array (3-4 images)
+      let imagesList = prod.images && prod.images.length >= 3 ? prod.images : [
+        prod.images[0],
+        'https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=900&q=85',
+        'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=900&q=85',
+        'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=900&q=85'
+      ];
+
+      function setMedia(type, indexOrUrl) {
+        state.activeMediaIndex = type === 'video' ? 'video' : indexOrUrl;
+        
+        document.querySelectorAll('.media-thumb-btn').forEach(btn => {
+          btn.classList.remove('border-shrinika-magenta', 'ring-2', 'ring-shrinika-gold', 'opacity-100');
+          btn.classList.add('border-shrinika-bordergold', 'opacity-70');
+        });
+
+        if (type === 'image') {
+          mainVideoContainer.classList.add('hidden');
+          mainVideo.pause();
+          mainImg.classList.remove('hidden');
+          mainImg.src = imagesList[indexOrUrl];
+
+          const activeBtn = document.getElementById(`thumb-img-${indexOrUrl}`);
+          if (activeBtn) {
+            activeBtn.classList.remove('border-shrinika-bordergold', 'opacity-70');
+            activeBtn.classList.add('border-shrinika-magenta', 'ring-2', 'ring-shrinika-gold', 'opacity-100');
+          }
+        } else {
+          mainImg.classList.add('hidden');
+          mainVideoContainer.classList.remove('hidden');
+          
+          if (prod.videoUrl) {
+            mainVideo.src = prod.videoUrl;
+            mainVideo.classList.remove('hidden');
+            videoFallback.classList.add('hidden');
+            mainVideo.play().catch(() => {});
+          } else {
+            mainVideo.classList.add('hidden');
+            videoFallback.classList.remove('hidden');
+          }
+
+          const activeVideoBtn = document.getElementById('thumb-video-btn');
+          if (activeVideoBtn) {
+            activeVideoBtn.classList.remove('border-shrinika-bordergold', 'opacity-70');
+            activeVideoBtn.classList.add('border-shrinika-magenta', 'ring-2', 'ring-shrinika-gold', 'opacity-100');
+          }
+        }
+      }
+
+      // Generate 3-4 Image Thumbnails
+      imagesList.slice(0, 4).forEach((imgUrl, idx) => {
+        const thumb = document.createElement('button');
+        thumb.id = `thumb-img-${idx}`;
+        thumb.className = `media-thumb-btn relative aspect-square rounded-lg overflow-hidden border-2 transition-all cursor-pointer ${
+          state.activeMediaIndex === idx 
+            ? 'border-shrinika-magenta ring-2 ring-shrinika-gold opacity-100' 
+            : 'border-shrinika-bordergold opacity-70 hover:opacity-100'
+        }`;
+        thumb.innerHTML = `
+          <img src="${imgUrl}" alt="Photo ${idx + 1}" class="w-full h-full object-cover">
+          <span class="absolute bottom-1 right-1 text-[8px] bg-shrinika-darkmagenta/90 text-white font-bold px-1 rounded">#${idx + 1}</span>
+        `;
+        thumb.addEventListener('click', () => setMedia('image', idx));
+        thumbsContainer.appendChild(thumb);
+      });
+
+      // Generate 1 Dedicated Video Thumbnail Selector (Prompt Requirement)
+      const videoThumb = document.createElement('button');
+      videoThumb.id = 'thumb-video-btn';
+      videoThumb.className = `media-thumb-btn relative aspect-square rounded-lg overflow-hidden border-2 flex flex-col items-center justify-center transition-all bg-shrinika-darkmagenta text-shrinika-gold cursor-pointer ${
+        state.activeMediaIndex === 'video'
+          ? 'border-shrinika-magenta ring-2 ring-shrinika-gold opacity-100'
+          : 'border-shrinika-bordergold opacity-80 hover:opacity-100'
+      }`;
+      videoThumb.innerHTML = `
+        <i class="fa-solid fa-play text-xs text-shrinika-gold"></i>
+        <span class="text-[9px] font-bold mt-1 uppercase tracking-wider text-white">Video</span>
+      `;
+      videoThumb.addEventListener('click', () => setMedia('video', null));
+      thumbsContainer.appendChild(videoThumb);
+
+      setMedia('image', 0);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      
+      // 1. Splash Screen Timing (Fraction of a second ~1.05s)
+      const splash = document.getElementById('splashScreen');
+      setTimeout(() => {
+        splash.classList.add('opacity-0');
+        setTimeout(() => {
+          splash.classList.add('hidden');
+        }, 500);
+      }, 1050);
+
+      // 2. Season Tab Filter Interaction
+      const seasonButtons = document.querySelectorAll('.season-btn');
+      seasonButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          seasonButtons.forEach(b => {
+            b.classList.remove('bg-shrinika-magenta', 'text-white', 'shadow-sm', 'font-semibold');
+            b.classList.add('text-stone-600', 'font-medium');
+          });
+          btn.classList.add('bg-shrinika-magenta', 'text-white', 'shadow-sm', 'font-semibold');
+          btn.classList.remove('text-stone-600', 'font-medium');
+          state.season = btn.getAttribute('data-season');
+          renderCategories();
+        });
+      });
+
+      // 3. Audience Tab Filter Interaction
+      const audienceButtons = document.querySelectorAll('.audience-btn');
+      audienceButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          audienceButtons.forEach(b => {
+            b.classList.remove('bg-shrinika-gold', 'text-white', 'shadow-sm', 'font-semibold');
+            b.classList.add('text-stone-600', 'font-medium');
+          });
+          btn.classList.add('bg-shrinika-gold', 'text-white', 'shadow-sm', 'font-semibold');
+          btn.classList.remove('text-stone-600', 'font-medium');
+          state.audience = btn.getAttribute('data-audience');
+          renderCategories();
+        });
+      });
+
+      // 4. Live Search Input
+      const searchInput = document.getElementById('globalSearchInput');
+      const clearSearchBtn = document.getElementById('clearSearchBtn');
+      const resetSearchBtn = document.getElementById('resetSearchBtn');
+
+      function handleSearchChange() {
+        state.searchQuery = searchInput.value;
+        if (state.searchQuery) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+        if (state.currentView !== 'home') {
+          navigateTo('home');
+        } else {
+          renderCategories();
+        }
+      }
+
+      searchInput.addEventListener('input', handleSearchChange);
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        handleSearchChange();
+      });
+      resetSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        handleSearchChange();
+      });
+
+      // 5. Navigation Click Handlers
+      document.getElementById('brandHeaderLogo').addEventListener('click', () => navigateTo('home'));
+      document.getElementById('backToHomeBtn').addEventListener('click', () => navigateTo('home'));
+      document.getElementById('backToCategoryBtn').addEventListener('click', () => navigateTo('category'));
+      document.getElementById('backToCategoriesBtnAlt').addEventListener('click', () => navigateTo('home'));
+
+      document.getElementById('mobileBackBtn').addEventListener('click', () => {
+        if (state.currentView === 'product') {
+          navigateTo('category');
+        } else {
+          navigateTo('home');
+        }
+      });
+
+      // 6. Modal Open/Close Controls
+      function setupModal(triggerId, modalId) {
+        const trigger = document.getElementById(triggerId);
+        const modal = document.getElementById(modalId);
+        if (!trigger || !modal) return;
+
+        trigger.addEventListener('click', () => modal.classList.remove('hidden'));
+        
+        modal.querySelectorAll('.modal-close-btn').forEach(btn => {
+          btn.addEventListener('click', () => modal.classList.add('hidden'));
+        });
+
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.classList.add('hidden');
+        });
+      }
+
+      setupModal('openFaqModalBtn', 'faqModal');
+      setupModal('openSizeChartModalBtn', 'sizeChartModal');
+      setupModal('openSizeChartModalFromDetail', 'sizeChartModal');
+      setupModal('openContactModalBtn', 'contactModal');
+
+      // Initial Category Render
+      renderCategories();
+    });
+  </script>
+</body>
+</html>
